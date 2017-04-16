@@ -1,0 +1,20 @@
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*common*/
+.wrapper {width:1700px; margin:0 auto;}
+body {background:#f1f1f1; color:#444;}
+
+/*header*/
+.header {background:#fff; border-bottom:1px solid #ddd;}
+.header .top { height:60px; border-bottom:1px solid #ddd;}
+.header .nav {height:100px;}
+
+.top .top_left {float:left;}
+.top .top_left .left_menu {float:left; font-size:10px; color:#999; line-height:60px; text-align:center; border-right:1px solid #ddd; padding:0 30px;}
+.top .contact {border-left:1px solid #ddd;}
+.top .top_left .left_menu span {font-size:12px; font-weight:bold;}
+
+.top .top_right {float:right;}
+.top .top_right li {float:left; font-size:12px; font-weight:bold; line-height:60px; padding:0 30px; border-left:1px solid #ddd;}
+.top .top_right li:last-child {border-right:1px solid #ddd;}

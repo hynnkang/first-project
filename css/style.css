@@ -1,0 +1,36 @@
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+body {font-size:14px;}
+.wrapper {width:1700px; margin:0 auto;}
+
+header {height:60px; border-bottom:1px solid gray; line-height:60px; text-align:center; position:relative;}
+header li {border-right:1px solid lightgray;}
+header ul {border-left:1px solid lightgray;}
+.left {float:left;}
+.left li {float:left;}
+.right {float:right;}
+.right li {float:left;}
+
+.top {height:80px; line-height:80px; border-bottom:1px solid lightgray;}
+.logo {float:left;}
+.menu {float:right;}
+.menu li {float:left;}
+
+.collection div {float:left; width:850px; height:500px; color:#fff; position:relative; }
+.collection .relax {background:url(../images/collection01.jpg)}
+.collection .street {background:url(../images/collection02.jpg)}
+.collection .desc {width:610px; height:340px; margin:0 auto; position:absolute; top:80px; left:120px;}
+.collection h2 {margin:20px 0; font-size:30px;}
+.collection .text {font-size:16px;}
+.collection .button {background:#fff; width:140px; height:50px; color:#000; border-radius:30px; text-align:center; line-height:50px;
+           position:absolute; bottom:0;}
+
+.product {height:500px; border-bottom:1px solid lightgray;}
+.product li {width:425px; height:500px; background:#fff; float:left;  }
+
+.product .pic {width:240px; height:240px; margin:30px auto;}
+.river .pic {background:url(../images/product01.png); }
+.rokoko .pic {background:url(../images/product02.jpg); }
+.soltone .pic {background:url(../images/product03.jpg); }
+.stevie .pic {background:url(../images/product04.jpg); }
