@@ -1,36 +1,135 @@
 * {margin:0; padding:0;}
+
+/*common*/
 li {list-style:none;}
+a {text-decoration:none;}
+img {vertical-align:top;}
+body {background:#f1f1f1; color:#444; font-size:12px; font-family: sans-serif;}
+.wrapper {width:1160px; margin:0 auto;}
+button {font-weight:bold; font-size:11px; border:none; cursor:pointer;}
 
-body {font-size:14px;}
-.wrapper {width:1700px; margin:0 auto;}
+/*top*/
+#top {height:60px; border-bottom:1px solid gray; line-height:60px; text-align:center; position:relative;}
+#top li {border-right:1px solid lightgray;}
+#top ul {border-left:1px solid lightgray;}
+#top .top_left {float:left;}
+#top .top_left li {padding:0 10px; float:left;}
+#top .top_right {float:right;}
+#top .top_right li {padding:0 10px; float:left;}
 
-header {height:60px; border-bottom:1px solid gray; line-height:60px; text-align:center; position:relative;}
-header li {border-right:1px solid lightgray;}
-header ul {border-left:1px solid lightgray;}
-.left {float:left;}
-.left li {float:left;}
-.right {float:right;}
-.right li {float:left;}
+/*navigation*/
+#nav {height:80px; border-bottom:1px solid lightgray;}
+#nav .logo {float:left;}
+#nav .logo img {margin-top:10px;}
+#nav .menu {margin-top:25px; float:right;}
+#nav .menu li.home {background:#b8cc06; color:#fff;}
+#nav .menu li.home a{color:#fff;}
+#nav .menu li {height:30px; line-height:30px; padding:0 15px; border-radius:15px; float:left;}
+#nav .menu li a {color:#000;}
+#nav .menu li:hover {background:#b8cc06; transition:200ms linear}
+#nav .menu li:hover a{color:#fff; transition:200ms linear}
 
-.top {height:80px; line-height:80px; border-bottom:1px solid lightgray;}
-.logo {float:left;}
-.menu {float:right;}
-.menu li {float:left;}
+/*Topslider*/
+#TopSlider {width:1160px; margin-top:10px;}
+#TopSlider .card 
+#TopSlider .card li {width:1160px; float:left;}
+#TopSlider .card li img {width:100%;}
 
-.collection div {float:left; width:850px; height:500px; color:#fff; position:relative; }
-.collection .relax {background:url(../images/collection01.jpg)}
-.collection .street {background:url(../images/collection02.jpg)}
-.collection .desc {width:610px; height:340px; margin:0 auto; position:absolute; top:80px; left:120px;}
+/*collection*/
+.collection .relax, .street {float:left; width:580px; height:340px; color:#fff; position:relative; overflow:hidden; }
+.collection .relax {background:url(../images/collection01.jpg); background-size:cover;}
+.collection .street {background:url(../images/collection02.jpg); background-size:cover;}
+.collection .desc {width:340px; height:170px; margin:0 auto; position:absolute; top:40px; left:120px;}
 .collection h2 {margin:20px 0; font-size:30px;}
 .collection .text {font-size:16px;}
-.collection .button {background:#fff; width:140px; height:50px; color:#000; border-radius:30px; text-align:center; line-height:50px;
-           position:absolute; bottom:0;}
+.collection .button {background:#fff; width:140px; height:50px; color:#000; border-radius:30px; text-align:center; line-height:50px; position:absolute; bottom:0;}
+.collection .veil {width:580px; height:640px; background:#b8cc06; opacity:0.2; position:absolute; top:-850px;
+            transition:500ms linear}
+.collection .relax:hover .veil {display:block; top:0;}
+.collection .street:hover .veil {display:block; top:0;}
 
+/*product*/
 .product {height:500px; border-bottom:1px solid lightgray;}
-.product li {width:425px; height:500px; background:#fff; float:left;  }
+.product li {width:290px; height:480px; background:#fff; float:left;  }
 
 .product .pic {width:240px; height:240px; margin:30px auto;}
 .river .pic {background:url(../images/product01.png); }
 .rokoko .pic {background:url(../images/product02.jpg); }
 .soltone .pic {background:url(../images/product03.jpg); }
 .stevie .pic {background:url(../images/product04.jpg); }
+
+.product .name {}
+
+/*special offer*/
+#special {margin-top:50px;}
+#special .title {text-align:center;}
+#special h2 {font-size:40px;}
+#special .content {margin:60px 0;}
+#special .desc {width:330px; height:400px; float:right;}
+#special h3 {font-size:28px;}
+#special .content .price {font-size:18px; margin:10px 0;}
+#special .content .price span {color:#b8cc06;}
+#special button {background:#b8cc06; color:#fff; border-radius:30px; width:120px; height:50px; margin:30px 0;}
+#special button.cart {background:#333;}
+
+/*new*/
+#new .title {text-align:center;}
+#new .title h2 {font-size:40px;}
+#new .category {width:820px; height:50px; margin:0 auto; margin-top:70px;}
+#new .category li {height:30px; line-height:30px; padding:0 20px; border-radius:15px; 
+            float:left; margin:0 15px; cursor:pointer;}
+#new .category li:hover {background:#b8cc06; color:#fff;}
+#new .item li {float:left; width:232px; text-align:center;}
+#new .item img {width:100%;}
+
+
+/*series*/
+
+#series .title {text-align:center;}
+#series .title h2 {font-size:40px;}
+#series .content {margin-top:70px;}
+#series .item {float:right;}
+#series .item li {float:left; text-align:center; width:265px; margin:0 10px;}
+#series .item .name {font-size:18px; font-weight:bold;}
+#series .item .text {font-size:12px; margin:5px 0;}
+#series .item .price {font-size:15px; margin:15px 0;}
+#series .item button {background:#b8cc06; border:none; color:#fff; font-size:11px; border-radius:30px; padding:15px 20px;}
+
+/*accessories*/
+#acce .title {text-align:center;}
+#acce .title h2 {font-size:40px;}
+#acce .item {text-align:center;}
+#acce .item ul {width:1160px; margin:0 auto; float:left;}
+#acce .item li {width:150px; margin:20px; float:left; text-align:center;}
+#acce .item p {font-size:11px; margin:10px 0;}
+#acce .item .name {font-weight:bold;}
+#acce button {background:#b8cc06; color:#fff; border-radius:30px; width:190px; height:50px; margin:0 auto;}
+
+/*Middle Slider*/
+#MidSlider {margin:70px 0;}
+#MidSlider .river {width:1160px; height:545px; background:url(../images/MidSliderbg01.jpg); background-size:cover;}
+
+
+/*Bottom Banners*/
+#BotBanner {width:1160px; height:450px; margin-top:60px;}
+#BotBanner .box {width:33.33%; height:450px; float:left;}
+#BotBanner .inner {height:100%; color:#fff; margin:0 15px;}
+#BotBanner .inner .desc {width:300px; margin:0 auto;}
+#BotBanner .inner h3 {font-size:30px;}
+#BotBanner .inner P {font-size:16px;}
+#BotBanner .box1 .inner {background:url(../images/BotBanner01.jpg);}
+#BotBanner .box2 .inner {background:url(../images/BotBanner02.jpg); background-size:cover;}
+#BotBanner .box3 .inner {background:url(../images/BotBanner03.jpg); background-size:cover;}
+#BotBanner .desc {text-align:center}
+#BotBanner button {background:#333; color:#fff; border-radius:30px; width:130px; height:50px; margin:30px 0;}
+
+/*subscription*/ 
+#subs 
+#subs .content {float:right;}
+#subs .email {border:1px #ddd solid; border-radius:30px; width:600px; height:40px;}
+#subs .email button {background:#b8cc06; color:#fff; border-radius:30px; padding:15px 30px;}
+
+
+
+
+/*집 컴퓨터 해상도에 맞춰서 제작*/
