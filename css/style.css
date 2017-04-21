@@ -6,7 +6,7 @@ a {text-decoration:none;}
 img {vertical-align:top;}
 body {background:#f1f1f1; color:#444; font-size:12px; font-family: sans-serif;}
 .wrapper {width:1160px; margin:0 auto;}
-button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-radius:30px;}
+button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-radius:30px; cursor:pointer;}
 
 /*top*/
 #top {height:60px; border-bottom:1px solid gray; line-height:60px; text-align:center; position:relative;}
@@ -24,10 +24,14 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #nav .menu {margin-top:25px; float:right;}
 #nav .menu li.home {background:#b8cc06; color:#fff;}
 #nav .menu li.home a{color:#fff;}
-#nav .menu li {height:30px; line-height:30px; padding:0 15px; border-radius:15px; float:left;}
+#nav .menu li {height:30px; line-height:30px; padding:0 15px; border-radius:15px; float:left; position:relative;}
 #nav .menu li a {color:#000;}
 #nav .menu li:hover {background:#b8cc06; transition:200ms linear}
 #nav .menu li:hover a{color:#fff; transition:200ms linear}
+#nav .menu .product_menu {width:600px; height:400px; background:#fff; border-top:5px #b8cc06 solid; 
+    position:absolute; z-index:1; left:-300px; top:100px; opacity:0; transition:400ms linear;}
+#nav .menu .product:hover .product_menu {opacity:1; top:60px;}
+
 
 /*Topslider*/
 #TopSlider {width:1160px; margin-top:10px; position:relative;}
@@ -35,18 +39,20 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #TopSlider .slide {width:3480px;}
 #TopSlider .slide li {width:1160px; float:left;}
 #TopSlider .slide li img {width:100%;}
+/*
 #TopSlider .button {width:40px; height:40px; border:1px #000 solid; border-radius:50%; text-align:center; position:absolute;}
 #TopSlider .left_but {left:-30px; top:300px;}
 #TopSlider .right_but {right:0; top:300px;}
+*/
 
 /*collection*/
 .collection .relax, .street {float:left; width:580px; height:340px; color:#fff; position:relative; overflow:hidden; }
 .collection .relax {background:url(../images/collection01.jpg); background-size:cover;}
 .collection .street {background:url(../images/collection02.jpg); background-size:cover;}
-.collection .desc {width:340px; height:170px; margin:0 auto; position:absolute; top:40px; left:120px;}
+.collection .desc {width:400px; height:220px; margin:0 auto; position:absolute; top:60px; left:80px;}
 .collection h2 {margin:20px 0; font-size:30px;}
 .collection .text {font-size:16px;}
-.collection .button {background:#fff; width:140px; height:50px; color:#000; text-align:center; line-height:50px;                            position:absolute; bottom:0;}
+.collection button {background:#fff; width:140px; height:50px; color:#000; text-align:center; line-height:50px;                           position:absolute; bottom:0;}
 .collection .veil {width:580px; height:640px; background:#b8cc06; opacity:0.2; position:absolute; top:-850px;
             transition:500ms linear}
 .collection .relax:hover .veil {display:block; top:0;}
@@ -79,16 +85,17 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 /*new*/
 #new .title {text-align:center;}
 #new .title h2 {font-size:40px;}
-#new .category {width:820px; height:50px; margin:0 auto; margin-top:70px;}
-#new .category li {height:30px; line-height:30px; padding:0 20px; border-radius:15px; 
+#new .category {width:820px; height:40px; margin:0 auto; margin-top:70px;}
+#new .category li {height:30px; line-height:30px; padding:0 20px; border-radius:15px; border:1px #ddd solid;
             float:left; margin:0 15px; cursor:pointer;}
 #new .category li:hover {background:#b8cc06; color:#fff;}
+#new .item {height:320px; margin-top:30px;}
 #new .item li {float:left; width:232px; text-align:center;}
 #new .item img {width:100%;}
 
 
 /*series*/
-
+#series {margin-top:90px;}
 #series .title {text-align:center;}
 #series .title h2 {font-size:40px;}
 #series .content {margin-top:70px;}
@@ -114,38 +121,46 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #MidSlider .container {width:1160px; overflow:hidden;}
 #MidSlider .slide {width:2320px;}
 #MidSlider .slide .card {width:1160px; height:545px; background:url(../images/MidSliderbg01.jpg); background-size:cover;                       float:left; position:relative;}
-#MidSlider .slide .thumnail {width:70px; height:210px; transform:translateY(50%);}
+#MidSlider .slide .thumnail {width:70px; height:210px; transform:translateY(50%); margin-left:20px;}
 #MidSlider .slide .thumnail li {width:70px; height:70px; border-radius:50%; border:1px #fff solid;}
-#MidSlider .slide .card .mainpic {margin-top:auto; position:absolute; top:40px;}
-#MidSlider .slide .card .desc {margin-top:auto; position:absolute; right:0; color:#fff; width:570px; top:30px;}
-#MidSlider .slide .card .desc h2 {font-size:40px;}
-#MidSlider .slide .card .desc p {font-size:16px;}
-/*
-#MidSlider .card .desc .button {background:#fff; color:#000; width:120px; height:50px; margin:30px 0; position:absolute;
-            bottom:0; float:left;}
-#MidSlider .card .desc button.cart {background:#ddd; color:#fff;}
-*/
+#MidSlider .slide .card .mainpic {margin-top:auto; position:absolute; top:40px; left:80px;}
+#MidSlider .slide .card .desc {margin-top:80px; position:absolute; right:0; color:#fff; width:570px; top:30px;}
+#MidSlider .slide .card .desc h2 {font-size:40px; margin:30px 0;}
+#MidSlider .slide .card .desc p {font-size:16px; margin:20px 0;}
+#MidSlider .slide .card .desc p.price {font-size:18px; margin-top:50px;}
+#MidSlider .card .button {position:absolute; right:60px; top:320px;}
+#MidSlider .card .button button {background:#fff; color:#000; width:140px; height:50px; margin:0 5px;}
+#MidSlider .card .button button.cart {background:#333; color:#fff;}
 
 /*Bottom Banners*/
-#BotBanner {width:1160px; height:450px; margin-top:60px;}
+#BotBanner {width:1160px; height:550px; margin-top:60px;}
 #BotBanner .box {width:33.33%; height:450px; float:left;}
-#BotBanner .inner {height:100%; color:#fff; margin:0 15px;}
-#BotBanner .inner .desc {width:300px; margin:0 auto;}
-#BotBanner .inner h3 {font-size:30px;}
-#BotBanner .inner P {font-size:16px;}
+#BotBanner .inner {height:100%; color:#fff; margin:0 10px; border-radius:5px; overflow:hidden;}
+#BotBanner .inner .desc {width:300px; margin:60px auto;} 
+#BotBanner .inner h3 {font-size:30px; margin-top:10px;}
+#BotBanner .inner P {font-size:16px; margin-top:30px;}
 #BotBanner .box1 .inner {background:url(../images/BotBanner01.jpg);}
 #BotBanner .box2 .inner {background:url(../images/BotBanner02.jpg); background-size:cover;}
 #BotBanner .box3 .inner {background:url(../images/BotBanner03.jpg); background-size:cover;}
 #BotBanner .desc {text-align:center}
 #BotBanner button {background:#333; color:#fff; border-radius:30px; width:130px; height:50px; margin:30px 0;}
 
+
+
 /*subscription*/ 
-#subs 
-#subs .content {float:right;}
-#subs .email {border:1px #ddd solid; border-radius:30px; width:600px; height:40px;}
-#subs .email button {background:#b8cc06; color:#fff; border-radius:30px; padding:15px 30px;}
+#subs {width:1160px;}
+/*#subs img {float:left;}*/
+#subs .content {width:550px; text-align:center; float:right; margin:150px 100px;}
+#subs .desc span {color:#b8cc06;}
+#subs .desc .title {font-size:16px;}
+#subs .desc h2 {font-size:28px; margin:10px 0;}
+#subs .desc .text {margin:15px 0; font-size:13px;}
+#subs .email {border:1px #000 solid; border-radius:30px; width:500px; height:40px; position:relative; margin:50px 0;}
+#subs .email input {border-color:transparent; height:20px; width:300px; position:absolute; left:10px; top:8px;}
+#subs .email button {background:#b8cc06; color:#fff; border-radius:30px; width:100px; height:40px; position:absolute; right:0;}
 
 
-
-
+/*footer*/
+#footer {width:1160px; height:400px; background:#333; color:#fff;}
+#footer .box {width:250px; float:left; height:300px; margin:30px 20px;}
 /*집 컴퓨터 해상도에 맞춰서 제작*/
