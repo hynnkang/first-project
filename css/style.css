@@ -6,7 +6,7 @@ a {text-decoration:none;}
 img {vertical-align:top;}
 body {background:#f1f1f1; color:#444; font-size:12px; font-family: sans-serif;}
 .wrapper {width:1160px; margin:0 auto;}
-button {font-weight:bold; font-size:11px; border:none; cursor:pointer;}
+button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-radius:30px;}
 
 /*top*/
 #top {height:60px; border-bottom:1px solid gray; line-height:60px; text-align:center; position:relative;}
@@ -30,10 +30,14 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer;}
 #nav .menu li:hover a{color:#fff; transition:200ms linear}
 
 /*Topslider*/
-#TopSlider {width:1160px; margin-top:10px;}
-#TopSlider .card 
-#TopSlider .card li {width:1160px; float:left;}
-#TopSlider .card li img {width:100%;}
+#TopSlider {width:1160px; margin-top:10px; position:relative;}
+#TopSlider .container {width:1160px; overflow:hidden;}
+#TopSlider .slide {width:3480px;}
+#TopSlider .slide li {width:1160px; float:left;}
+#TopSlider .slide li img {width:100%;}
+#TopSlider .button {width:40px; height:40px; border:1px #000 solid; border-radius:50%; text-align:center; position:absolute;}
+#TopSlider .left_but {left:-30px; top:300px;}
+#TopSlider .right_but {right:0; top:300px;}
 
 /*collection*/
 .collection .relax, .street {float:left; width:580px; height:340px; color:#fff; position:relative; overflow:hidden; }
@@ -42,7 +46,7 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer;}
 .collection .desc {width:340px; height:170px; margin:0 auto; position:absolute; top:40px; left:120px;}
 .collection h2 {margin:20px 0; font-size:30px;}
 .collection .text {font-size:16px;}
-.collection .button {background:#fff; width:140px; height:50px; color:#000; border-radius:30px; text-align:center; line-height:50px; position:absolute; bottom:0;}
+.collection .button {background:#fff; width:140px; height:50px; color:#000; text-align:center; line-height:50px;                            position:absolute; bottom:0;}
 .collection .veil {width:580px; height:640px; background:#b8cc06; opacity:0.2; position:absolute; top:-850px;
             transition:500ms linear}
 .collection .relax:hover .veil {display:block; top:0;}
@@ -69,7 +73,7 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer;}
 #special h3 {font-size:28px;}
 #special .content .price {font-size:18px; margin:10px 0;}
 #special .content .price span {color:#b8cc06;}
-#special button {background:#b8cc06; color:#fff; border-radius:30px; width:120px; height:50px; margin:30px 0;}
+#special button {background:#b8cc06; color:#fff; width:120px; height:50px; margin:30px 0;}
 #special button.cart {background:#333;}
 
 /*new*/
@@ -107,8 +111,20 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer;}
 
 /*Middle Slider*/
 #MidSlider {margin:70px 0;}
-#MidSlider .river {width:1160px; height:545px; background:url(../images/MidSliderbg01.jpg); background-size:cover;}
-
+#MidSlider .container {width:1160px; overflow:hidden;}
+#MidSlider .slide {width:2320px;}
+#MidSlider .slide .card {width:1160px; height:545px; background:url(../images/MidSliderbg01.jpg); background-size:cover;                       float:left; position:relative;}
+#MidSlider .slide .thumnail {width:70px; height:210px; transform:translateY(50%);}
+#MidSlider .slide .thumnail li {width:70px; height:70px; border-radius:50%; border:1px #fff solid;}
+#MidSlider .slide .card .mainpic {margin-top:auto; position:absolute; top:40px;}
+#MidSlider .slide .card .desc {margin-top:auto; position:absolute; right:0; color:#fff; width:570px; top:30px;}
+#MidSlider .slide .card .desc h2 {font-size:40px;}
+#MidSlider .slide .card .desc p {font-size:16px;}
+/*
+#MidSlider .card .desc .button {background:#fff; color:#000; width:120px; height:50px; margin:30px 0; position:absolute;
+            bottom:0; float:left;}
+#MidSlider .card .desc button.cart {background:#ddd; color:#fff;}
+*/
 
 /*Bottom Banners*/
 #BotBanner {width:1160px; height:450px; margin-top:60px;}
