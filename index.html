@@ -42,15 +42,27 @@
                         <img src="images/logo.png"/>
                     </div>
                     <ul class="menu">
-                        <li class="home"><a href="#">HOME</a></li>
-                        <li class="product"><a href="#">PRODUCT</a>
-                            <div class="product_menu">
-                                <img src="images/menu_product01.jpg"/>
+                        <li class="home menuname">
+                            <a href="#">HOME</a>
+                            <div class="menubox">
+                                <ul>
+                                    <li><a href="#">HOME1</a></li>
+                                    <li><a href="#">HOME2</a></li>
+                                    <li><a href="#">HOME3</a></li>
+                                    <li><a href="#">HOME4</a></li>
+                                    <li><a href="#">HOME5</a></li>
+                                    <li><a href="#">HOME6</a></li>
+                                    <li><a href="#">HOME6</a></li>
+                                </ul>
                             </div>
                         </li>
-                        <li><a href="#">PAGES</a></li>
-                        <li><a href="#">GALLERY</a></li>
-                        <li><a href="#">BLOG</a></li>
+                        <li class="product menuname">
+                            <a href="#">PRODUCT</a>
+                            <div></div>
+                        </li>
+                        <li class="menuname"><a href="#">PAGES</a></li>
+                        <li class="menuname"><a href="#">GALLERY</a></li>
+                        <li class="menuname"><a href="#">BLOG</a></li>
                     </ul>   
                 </div>
             </div>     
@@ -71,31 +83,31 @@
             </div>  
             
          
-            <div class="collection">
+            <div id="collection">
                 <div class="relax">
                     <div class="desc">
                         <p>RELAX COLLECTION</p>
                         <h2>YOUR PERFECT SOUND</h2>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
-                        <button>LEARN MORE</button>
                     </div> 
                     <div class="veil"></div>
+                    <button>LEARN MORE</button>
                 </div>
                 <div class="street">
                     <div class="desc">
                         <P>STREET COLLECTION</P>
                         <h2>NOISE IS NOT A PROBLEM</h2>
                         <p  class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
-                        <button>LEARN MORE</button>
                    </div> 
                    <div class="veil"></div>
+                   <button>LEARN MORE</button>
                 </div>
             </div>
             
-        <div class="product">
+        <div id="product">
             <ul>
-                <li class="river">
-                    <div class="pic"></div>
+                <li>
+                    <img src="images/product01.png"/>
                     <div class="desc">
                         <p class="name">RIVER ISLAND SKINNY FIT</p>
                         <div class="rate">★★★★☆</div>
@@ -103,8 +115,8 @@
                         <p class="price">$500.00</p>
                     </div>
                 </li>
-                <li class="rokoko">
-                    <div class="pic"></div>
+                <li>
+                    <img src="images/product02.jpg"/>
                     <div class="desc">
                         <p class="name">ROKOKO LACE TOP CO-ORD</p>
                         <P class="rate">☆☆☆☆☆</p>
@@ -112,8 +124,8 @@
                         <p class="price">$500.00</p>
                     </div>
                 </li>
-                <li class="soltone">
-                     <div class="pic"></div>
+                <li>
+                    <img src="images/product03.jpg"/>
                     <div class="desc">
                         <p class="name">SOLTONE PRODUCT SAMPLE</p>
                         <p class="rate">☆☆☆☆☆</p>
@@ -122,7 +134,7 @@
                     </div>
                 </li>
                 <li class="stevie">
-                     <div class="pic"></div>
+                    <img src="images/product04.jpg"/>
                     <div class="desc">
                         <p class="name">STEVIE MAY MINI DRESS</p>
                         <p class="rate">☆☆☆☆☆</p>
@@ -158,60 +170,308 @@
                     <h2>SOMETHING NEW FOR YOU</h2>
                 </div>
                 <ul class="category">
-                    <li>ALL</li>
-                    <li>SPORTS</li>
-                    <li>PROFFESIONALS</li>
-                    <li>JD</li>
-                    <li>RELAX</li>
-                    <li>CLUB</li>
-                </ul>
-                <ul class="item">
-                    <li class="faxtex">
-                        <img src="images/new01.jpg"/>
-                        <div class="desc">
-                            <p class="name">FAXTEX PRODUCT SAMPLE</p>
-                            <p class="rate">★★★★★</p>
-                            <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
-                            <p class="price">$110.00</p>
-                        </div>
+                    <li class="all">
+                        <h3>ALL</h3>
+                        <ul class="item">
+                            <li>
+                                <img src="images/new_all01.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FAXTEX PRODUCT SAMPLE</p>
+                                    <p class="rate">★★★★★</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$110.00</p>
+                                </div>
+                            </li>
+                            <li class="finity">
+                                <img src="images/new_all02.png"/>
+                                <div class="desc">
+                                    <p class="name">FINITY PRODUCT SAMPLE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$90.00</p>
+                                </div>
+                            </li>
+                            <li class="fixair">
+                                <img src="images/new_all03.jpg"/>
+                                 <div class="desc">
+                                    <p class="name">FIXAIR PRODUCT SAMPLE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$210.00</p>
+                                </div>
+                            </li>
+                            <li class="flat">
+                                <img src="images/new_all04.jpg"/>
+                                 <div class="desc">
+                                    <p class="name">FLAT LENS SILVER AVIATOR</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li class="gold">
+                                <img src="images/new_all05.jpg"/>
+                                 <div class="desc">
+                                    <p class="name">GOLD WITH NOSE BAR</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li> 
+                    <li>
+                         <h3>SPORTS</h3>
+                         <ul class="item">
+                            <li>
+                                <img src="images/new_sports01.png"/>
+                                <div class="desc">
+                                    <p class="name">FINITY PRODUCT SAMPLE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$90.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_sports02.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FIXAIR PRODUCT SAMPLE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$210.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_sports03.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FLAT LENS SILVER AVIATOR</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_sports04.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FREECOF PRODUCT ADIDAS</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$450.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_sports05.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FRESHKIX PRODUCT ADIDAS</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$150.00</p>
+                                </div>
+                            </li>
+                    </ul>         
                     </li>
-                    <li class="finity">
-                        <img src="images/new02.png"/>
-                        <div class="desc">
-                            <p class="name">FINITY PRODUCT SAMPLE</p>
-                            <p class="rate">☆☆☆☆☆</p>
-                            <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
-                            <p class="price">$90.00</p>
-                        </div>
+                    <li>
+                         <h3>PROFESSIONALS</h3>
+                         <ul class="item">
+                            <li>
+                                <img src="images/new_pro01.jpg"/>
+                                <div class="desc">
+                                    <p class="name">HOT COM PRODUCT NIKE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$250.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_pro02.jpg"/>
+                                <div class="desc">
+                                    <p class="name">HOTEX PRODUCT NIKE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$70.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_pro03.jpg"/>
+                                <div class="desc">
+                                    <p class="name">IN MINT GREEN</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_pro04.jpg"/>
+                                <div class="desc">
+                                    <p class="name">IN TEXTURED PUMA</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_pro05.jpg"/>
+                                <div class="desc">
+                                    <p class="name">IRENE PRODUCT PUMA</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$150.00</p>
+                                </div>
+                            </li>
+                    </ul>         
                     </li>
-                    <li class="fixair">
-                        <img src="images/new03.jpg"/>
-                         <div class="desc">
-                            <p class="name">FIXAIR PRODUCT SAMPLE</p>
-                            <p class="rate">☆☆☆☆☆</p>
-                            <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
-                            <p class="price">$210.00</p>
-                        </div>
+                    <li>
+                         <h3>JD</h3>
+                         <ul class="item">
+                            <li>
+                                <img src="images/new_JD01.png"/>
+                                <div class="desc">
+                                    <p class="name">RIVER ISLAND SKINNY FIT</p>
+                                    <p class="rate">★★★★☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$110.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_JD02.jpg"/>
+                                <div class="desc">
+                                    <p class="name">ROKOKO LACE TOP CO-ORD</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_JD03.jpg"/>
+                                <div class="desc">
+                                    <p class="name">SOLTONE PRODUCT SAMPLE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$280.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_JD04.jpg"/>
+                                <div class="desc">
+                                    <p class="name">STEVIE MAY MINI DRESS</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_JD05.jpg"/>
+                                <div class="desc">
+                                    <p class="name">STEVIE MAY RODEO DRESS</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                    </ul>         
                     </li>
-                    <li class="flat">
-                        <img src="images/new04.jpg"/>
-                         <div class="desc">
-                            <p class="name">FLAT LENS SILVER AVIATOR</p>
-                            <p class="rate">☆☆☆☆☆</p>
-                            <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
-                            <p class="price">$449.99</p>
-                        </div>
+                    <li>
+                         <h3>RELAX</h3>
+                         <ul class="item">
+                            <li>
+                                <img src="images/new_relax01.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FAXTEX PRODUCT SAMPLE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$250.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_relax02.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FINITY PRODUCT SAMPLE</p>
+                                    <p class="rate">★★★★★</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$70.00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_relax03.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FIXAIR PRODUCT SAMPLE</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_relax04.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FLAT LENS SILVER AVIATOR</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_relax05.jpg"/>
+                                <div class="desc">
+                                    <p class="name">FREECOF PRODUCT ADIDAS</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$150.00</p>
+                                </div>
+                            </li>
+                    </ul>         
                     </li>
-                    <li class="gold">
-                        <img src="images/new05.jpg"/>
-                         <div class="desc">
-                            <p class="name">GOLD WITH NOSE BAR</p>
-                            <p class="rate">☆☆☆☆☆</p>
-                            <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
-                            <p class="price">$449.99</p>
-                        </div>
+                     <li>
+                         <h3>CLUB</h3>
+                         <ul class="item">
+                            <li>
+                                <img src="images/new_club01.jpg"/>
+                                <div class="desc">
+                                    <p class="name">AVIATORS WITH FLAT LENS</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_club02.jpg"/>
+                                <div class="desc">
+                                    <p class="name">BEACH CROP TOP CO-ORD</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_club03.jpg"/>
+                                <div class="desc">
+                                    <p class="name">BLACK FASION ZAPDRAM</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_club04.jpg"/>
+                                <div class="desc">
+                                    <p class="name">BLEND TWISTER SLIM DENIM</p>
+                                    <p class="rate">☆☆☆☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/new_club05.jpg"/>
+                                <div class="desc">
+                                    <p class="name">BLEND TWISTER SLIM DENIM</p>
+                                    <p class="rate">★★★☆☆</p>
+                                    <p class="text">Description Our new HPB12/A12 battery is rated at 2000mAh and designed to...</p>
+                                    <p class="price">$449.99</p>
+                                </div>
+                            </li>
+                    </ul>         
                     </li>
-                </ul>
+                   
+                </ul>    
             </div>
                 
             
@@ -302,31 +562,67 @@
                     <ul>
                         <li>
                             <img src="images/acce01.jpg"/>
+                            <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">FAXTEX PRODUCT SAMPLE</p>
                             <p class="price">$110.00</p>
                         </li>
                         <li>
                             <img src="images/acce02.jpg"/>
+                            <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">FINITY PRODUCT SAMPLE</p>
                             <p class="price">$110.00</p>
                         </li>
                         <li>
                             <img src="images/acce03.jpg"/>
+                            <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">FIXAIR PRODUCT SAMPLE</p>
                             <p class="price">$110.00</p>
                         </li>
                         <li>
                             <img src="images/acce04.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">FLAT LENS SILVER AVIATOR</p>
                             <p class="price">$110.00</p>
                         </li>
                         <li>
                             <img src="images/acce05.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">FREECOF PRODUCT ADIDAS</p>
                             <p class="price">$110.00</p>
                         </li>
                         <li>
                             <img src="images/acce06.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">FRESHKIX PRODUCT ADIDAS</p>
                             <p class="price">$110.00</p>
                         </li>
@@ -335,31 +631,79 @@
                     <ul>
                         <li>
                             <img src="images/acce07.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">GEORGEOUS BLUE ADIDAS</p>
                             <p class="price">$349.99</p>
                         </li>
                         <li>
                             <img src="images/acce08.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">GEORGEOUS WHITE ADIDAS</p>
                             <p class="price">$149.99</p>
                         </li>
                         <li>
                             <img src="images/acce09.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">GOLD DIAMOND NIKE</p>
                             <p class="price">$399.00</p>
                         </li>
                         <li>
                             <img src="images/acce10.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">GOLD WITH NOSE BAR</p>
                             <p class="price">$449.99</p>
                         </li>
                         <li>
                             <img src="images/acce11.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">GOLDDAX PRODUCT NIKE</p>
                             <p class="price">$120.00</p>
                         </li>
                         <li>
                             <img src="images/acce12.jpg"/>
+                             <div class="cover">
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <button class="quickview">QUICKVIEW</button>
+                                </div>    
+                            </div>
                             <p class="name">HOT COM PRODUCT NIKE</p>
                             <p class="price">$250.00</p>
                         </li>
@@ -373,37 +717,34 @@
             <div class="box box1">
                 <div class="inner">
                     <div class="veil"></div>
-                    <div class="desc">
-                        <p class="keyword">RELIABLITY</p>
-                        <h3>PERFECT SOUND FOR EVERYONE</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
-                        <button>LEARN MORE</button>
-                    </div>
-                    
                 </div>
+                <div class="desc">
+                    <p class="keyword">RELIABLITY</p>
+                    <h3>PERFECT SOUND FOR EVERYONE</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
+                    <button>LEARN MORE</button>
+                 </div>
             </div>    
             <div class="box box2">
-                 <div class="inner">
+                <div class="inner">
                     <div class="veil"></div>
-                    <div class="desc">
-                        <p class="keyword">HIGH QUALITY</p>
-                        <h3>CHOICE OF PROFESSIONALS</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
-                        <button>LEARN MORE</button>
-                    </div>
-                    
+                </div>
+                <div class="desc">
+                    <p class="keyword">HIGH QUALITY</p>
+                    <h3>CHOICE OF PROFESSIONALS</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
+                    <button>LEARN MORE</button>
                 </div>
             </div>    
             <div class="box box3">
                  <div class="inner">
-                    <div class="veil"></div>
-                    <div class="desc">
-                        <p class="keyword">CONVENIENCE</p>
-                        <h3>SATISFACTION GUARANTEED</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
-                        <button>LEARN MORE</button>
-                    </div>
-                    
+                    <div class="veil"></div> 
+                </div>
+                <div class="desc">
+                    <p class="keyword">CONVENIENCE</p>
+                    <h3>SATISFACTION GUARANTEED</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
+                    <button>LEARN MORE</button>
                 </div>
             </div>    
         </div>    
@@ -423,31 +764,100 @@
                 </div> 
             </div>
         </div>
-        
-        
             
+            
+    </div> 
+        
+               
         <div id="footer">
-            <div class="exzo box">
-                <img src="images/logo_white.png"/>
-                <p>Integer posuere orci sit amet feugiat pellent que. Suspendisse vel tempor justo, sit amet posuere orci dapibus auctor <br/> Contact us: +3 888 888 888 <br/> Email us: office@exzo.com <br/> Address: 1st, new york, usa</p>
+            <div class="wrapper">
+                <div class="exzo box">
+                    <h2>
+                        <img src="images/logo_white.png"/>
+                    </h2>
+                    <p>Integer posuere orci sit amet feugiat pellent que. Suspendisse vel tempor justo, sit amet posuere orci dapibus auctor</p> <br/> 
+                    <p class="contact">Contact us: +3 888 888 888 <br/> Email us: office@exzo.com <br/> 
+                        Address: 1st, new york, usa</p>
+                </div>
+                <div class="links box">
+                    <h2>QUICK LINKS</h2>
+                    <ul class="links01">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                     <ul class="links02">
+                        <li><a href="#">ACCESSORIES</a></li>
+                        <li><a href="#">HEADPHONES</a></li>
+                        <li><a href="#">LAPTOPS</a></li>
+                        <li><a href="#">SMARTPHONES</a></li>
+                        <li><a href="#">SMARTWATCHES</a></li>
+                        <li><a href="#">SPORT GADGETS</a></li>
+                        <li><a href="#">GADGETS FOR HOUSE</a></li>
+                    </ul>
+                </div>
+                <div class="posts box">
+                    <h2>SOME POSTS</h2>
+                    <ul>
+                        <li>
+                            <img src="images/footer_posts01.jpg"/>
+                            <div class="desc">
+                                <P class="date">DEC 12, 2016</P>
+                                <p class="text">DONEC DAPIBUS EFFICITUR ODIO, NEC MOLESTIE ANTE TRISTIQUE VEL</p>
+                            </div>
+                        </li>    
+                        <li>
+                            <img src="images/footer_posts02.jpg"/>
+                            <div class="desc">
+                                <P class="date">DEC 12, 2016</P>
+                                <p class="text">DONEC DAPIBUS EFFICITUR ODIO, NEC MOLESTIE ANTE TRISTIQUE VEL</p>
+                            </div>
+                            
+                        </li>    
+                        <li>
+                            <img src="images/footer_posts03.jpg"/>
+                            <div class="desc">
+                                <P class="date">NOV 28, 2016</P>
+                                <p class="text">PRAESENT LOBORTIS LEO MI</p>
+                            </div>
+                        </li>    
+                    </ul>
+                </div>
+                <div class="tags box">
+                    <h2>POPULAR TAGS</h2>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div> 
+            </div>    
+        </div>   
+        
+        
+        
+        
+        
+    <div id="fixedBot">
+        <div class="wrapper">
+            <div class="policy">
+                <p>Cookie Policy<br />This site uses cookies to store information on your compute.</p>
             </div>
-            <div class="link box">
-                <p>QUICK LINKS</p>
-            </div>
-            <div class="post box">
-                <p>SOME POSTS</p>
-            </div>
-            <div class="tag box">
-                <p>POPULAR TAGS</p>
-            </div> 
+            <div class="accept">
+           <p>Happy to accept?</p>
+                <button class="noThx">NO THANKS</button>
+                <button>ACCEPT</button>
+            </div>    
         </div>
-            
-            
-            
-            
-            
-            
-        </div>            
+    </div>    
             
             
         
