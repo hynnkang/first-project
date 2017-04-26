@@ -8,19 +8,24 @@ body {background:#fff; color:#444; font-size:12px; font-family: sans-serif;}
 .wrapper {width:1160px; margin:0 auto;}
 button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-radius:30px;}
 
+
 /*top*/
 #top {height:60px; border-bottom:1px solid gray; line-height:60px; text-align:center; position:relative;}
 #top li {border-right:1px solid lightgray;}
 #top ul {border-left:1px solid lightgray;}
 #top .top_left {float:left;}
-#top .top_left li {padding:0 10px; float:left;}
+#top .top_left li {padding:0 12px; float:left;}
 #top .top_right {float:right;}
-#top .top_right li {padding:0 10px; float:left;}
-
+#top .top_right li {padding:0 12px; float:left;}
+#top li {font-size:11px; font-weight:bold;}
+#top li p {display:inline-block;}
+#top li span {font-size:10px; font-weight:normal;}
+#top .currency img {margin-top:25px; margin-right:5px;}
+#top .cart img {margin-top:17px; margin-left:5px;}
 /*navigation*/
-#nav {height:80px; border-bottom:1px solid lightgray;}
+#nav {height:80px; border-bottom:1px solid lightgray; background:#fff;}
 #nav .logo {float:left;}
-#nav .logo img {margin-top:10px;}
+#nav .logo img {margin-top:11px;}
 #nav .menu {margin-top:25px; float:right;}
 #nav .menu li.home {background:#b8cc06; color:#fff;}
 #nav .menu li.home a{color:#fff;}
@@ -29,11 +34,15 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #nav .menu .menuname:hover {background:#b8cc06; transition:200ms linear}
 #nav .menu .menuname:hover a{color:#fff; transition:200ms linear}
 
-#nav .menu .home .menubox {width:500px; height:500px; background:#fff; position:absolute; z-index:1000; border-bottom-left-radius:5px; border-bottom-right-radius:5px; margin-top:31px;}
+#nav .menu .menubox {background:#fff; position:absolute; z-index:1000; border-bottom-left-radius:5px; border-bottom-right-radius:5px; margin-top:32px;}
+
+#nav .menu .home .menubox {width:500px; height:500px;}
 #nav .menu .home .menubox ul {margin:20px;}
 #nav .menu .home .menubox ul a {color:#444; font-size:11px;}
 
+#nav .menu .pages .menubox {width:300px 100px; }
 
+#nav.fixed {position:fixed; top:0; width:100%; z-index:100;}
 
 /*Topslider*/
 #TopSlider {width:1160px; position:relative;}
@@ -60,13 +69,21 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 
 /*product*/
 #product {height:480px; border-bottom:1px #ddd solid; margin-top:30px;}
-#product li {width:240px; height:480px; margin:0 25px; background:#fff; float:left;  }
+#product li {width:240px; height:480px; margin:0 25px; background:#fff; float:left; position:relative;}
 #product li img {width:95%}
 #product li .desc {width:90%; margin-top:20px;}
 #product .name {font-weight:bold; margin:6px 0;}
 #product .rate {font-size:16px; color:#b8cc06; margin:5px 0;}
 #product .text {line-height:20px; font-size:13px;}
 #product .price {font-size:15px; margin:12px 0;}
+#product li .cover {width:240px; height:240px; background:#fff; position:absolute; top:0; opacity:0;}
+#product li .cover button {width:130px; height:50px; margin:5px 55px; background:#b8cc06; color:#fff; border-radius:30px; }
+#product li .cover button.quickview {background:#333;}
+#product li .cover .button {width:240px; margin-top:70px;}
+#product li:hover .cover {opacity:1; transition:200ms ease;}
+#product li:hover .button {margin-top:50px; transition:400ms ease;}
+#product li .cover button:hover {background:#94bf1d; transition:400ms ease;}
+#product li .cover button.quickview:hover {background:#b8cc06;}
 
 /*special offer*/
 #special {margin-top:50px;}
@@ -140,30 +157,30 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #acce .item ul {width:1160px; margin:0 auto; float:left;}
 #acce .item li {width:150px; margin:20px; float:left; text-align:center; position:relative;}
 #acce .item li .cover {width:150px; height:125px; background:#fff; position:absolute; top:0; opacity:0;}
-#acce .item li .cover button {width:110px; height:30px; margin:5px auto;}
+#acce .item li .cover button {width:110px; height:30px; margin:5px auto; background:#b8cc06; color:#fff; border-radius:30px; }
 #acce .item li .cover button.quickview {background:#333;}
 #acce .item li .cover .button {margin-top:60px;}
 #acce .item li:hover .cover {opacity:1; transition:200ms ease;}
 #acce .item li:hover .button {margin-top:20px; transition:300ms ease;}
 #acce .item p {font-size:11px; margin:10px 0;}
 #acce .item .name {font-weight:bold;}
-#acce button {background:#b8cc06; color:#fff; border-radius:30px; width:190px; height:50px; margin:0 auto;}
 
 
 /*Bottom Banners*/
-#BotBanner {width:1160px; height:550px; margin-top:60px; overflow:hidden;}
-#BotBanner .box {width:33.33%; height:450px; float:left; position:relative;}
-#BotBanner .inner {height:100%; margin:0 10px; border-radius:5px; overflow:hidden;}
-#BotBanner .box .desc {width:300px; margin:0px auto; top:40px; left:40px; position:absolute; color:#fff;} 
-#BotBanner .box h3 {font-size:30px; margin-top:10px;}
-#BotBanner .box P {font-size:16px; margin-top:30px;}
-#BotBanner .box1 .inner {background:url(../images/BotBanner01.jpg);}
-#BotBanner .box2 .inner {background:url(../images/BotBanner02.jpg); background-size:cover;}
-#BotBanner .box3 .inner {background:url(../images/BotBanner03.jpg); background-size:cover;}
+#BotBanner {width:1160px; height:550px; margin:60px 25px 0; overflow:hidden;}
+#BotBanner .box {width:350px; height:430px; float:left; margin:0 10px; position:relative; border-radius:5px;
+    background-size:cover;}
+#BotBanner .box .desc {width:250px; margin:0px auto; top:35px; left:50px; position:absolute; color:#fff;} 
+#BotBanner .box h3 {font-size:30px; margin-top:10px; line-height:30px;}
+#BotBanner .box .desc p {font-size:16px; margin-top:30px;}
+#BotBanner .box .desc .keyword {font-size:14px; font-weight:bold;}
+#BotBanner .box1 {background:url(../images/BotBanner01.jpg);}
+#BotBanner .box2 {background:url(../images/BotBanner02.jpg);}
+#BotBanner .box3 {background:url(../images/BotBanner03.jpg);}
 #BotBanner .desc {text-align:center}
 #BotBanner button {background:#333; color:#fff; border-radius:30px; width:130px; height:50px; margin:30px 0;}
 #BotBanner button:hover {background:#b8cc06; transition:200ms linear;}
-#BotBanner .veil {width:95%; height:450px; background:#b8cc06; opacity:0.3; position:absolute; top:-450px;}
+#BotBanner .veil {width:100%; height:430px; background:#b8cc06; opacity:0.3; position:absolute; top:-450px;}
 #BotBanner .box:hover .veil {top:0; display:block; transition:200ms linear;}
 
 /*subscription*/ 

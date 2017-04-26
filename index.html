@@ -23,15 +23,17 @@
             <div id="top">
                 <div class="wrapper">
                 <ul class="top_left">
-                    <li >CONTACT US: +3 888 888 888</li>
-                    <li >EMAIL: office@exzo.com</li>
+                    <li>CONTACT US<span>: +3 888 888 888</span></li>
+                    <li>EMAIL<span>: office@exzo.com</span></li>
                 </ul>    
                 <ul class="top_right">
-                    <li>LOGIN  OR REGISTER</li>
-                    <li>USD</li>
-                    <li>♡</li>
-                    <li></li>
-                    <li>MY CART</li
+                    <li><p>LOGIN  <span>OR</span> REGISTER</p></li>
+                    <li class="currency"><img src="images/icon-usd.png"/><p>USD</p>
+                        <div class="currency_list"></div>
+                    </li>
+                    <li><img src="images/icon-heart.png"/></li>
+                    <li><img src="images/icon-compare.png"></li>
+                    <li class="cart">MY CART<img src="images/icon-cart.png"/></li>
                 </ul>
                 </div>
             </div>        
@@ -60,7 +62,15 @@
                             <a href="#">PRODUCT</a>
                             <div></div>
                         </li>
-                        <li class="menuname"><a href="#">PAGES</a></li>
+                        <li class="pages menuname"><a href="#">PAGES</a>
+                             <div class="menubox">
+                                <ul>
+                                    <li><a href="#">ABOUT US</a></li>
+                                    <li><a href="#">CONTACT US</a></li>
+                                    <li><a href="#">SERVICES</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="menuname"><a href="#">GALLERY</a></li>
                         <li class="menuname"><a href="#">BLOG</a></li>
                     </ul>   
@@ -103,11 +113,17 @@
                    <button>LEARN MORE</button>
                 </div>
             </div>
-            
-        <div id="product">
+                
+            <div id="product">
             <ul>
                 <li>
                     <img src="images/product01.png"/>
+                    <div class="cover">
+                        <div class="button">
+                            <button>ADD TO CART</button>
+                            <button class="quickview">QUICKVIEW</button>
+                        </div>    
+                    </div>
                     <div class="desc">
                         <p class="name">RIVER ISLAND SKINNY FIT</p>
                         <div class="rate">★★★★☆</div>
@@ -117,6 +133,12 @@
                 </li>
                 <li>
                     <img src="images/product02.jpg"/>
+                    <div class="cover">
+                        <div class="button">
+                            <button>ADD TO CART</button>
+                            <button class="quickview">QUICKVIEW</button>
+                        </div>    
+                    </div>
                     <div class="desc">
                         <p class="name">ROKOKO LACE TOP CO-ORD</p>
                         <P class="rate">☆☆☆☆☆</p>
@@ -126,6 +148,12 @@
                 </li>
                 <li>
                     <img src="images/product03.jpg"/>
+                    <div class="cover">
+                        <div class="button">
+                            <button>ADD TO CART</button>
+                            <button class="quickview">QUICKVIEW</button>
+                        </div>    
+                    </div>
                     <div class="desc">
                         <p class="name">SOLTONE PRODUCT SAMPLE</p>
                         <p class="rate">☆☆☆☆☆</p>
@@ -135,6 +163,12 @@
                 </li>
                 <li class="stevie">
                     <img src="images/product04.jpg"/>
+                    <div class="cover">
+                        <div class="button">
+                            <button>ADD TO CART</button>
+                            <button class="quickview">QUICKVIEW</button>
+                        </div>    
+                    </div>
                     <div class="desc">
                         <p class="name">STEVIE MAY MINI DRESS</p>
                         <p class="rate">☆☆☆☆☆</p>
@@ -494,7 +528,7 @@
                         </li>
                         
                         <li class="dento">
-                            <img src="images/series02jpg.jpg"/>
+                            <img src="images/series02.jpg"/>
                              <p class="name">DENTO PRODUCT SAMPLE</p>
                              <p class="text">Description Our new HPB12/A12 battery is rated at...</p>
                              <p class="price">$20.00</p>
@@ -530,9 +564,9 @@
                         </li>
                         <li class="card">
                             <ul class="thumnail">
-                                <li><img src="images/Mid_thumnail01.png"/></li>
-                                <li><img src="images/Mid_thumnail02.png"/></li>
-                                <li><img src="images/Mid_thumnail03.png"/></li>
+                                <li><img src="images/Mid_thumnail04.png"/></li>
+                                <li><img src="images/Mid_thumnail05.png"/></li>
+                                <li><img src="images/Mid_thumnail06.png"/></li>
                             </ul>
                             <div class="mainpic">
                                 <img src="images/Mid_mainpic02.png"/>
@@ -713,33 +747,27 @@
             </div>
         </div>  
             
-        <div id="BotBanner">
-            <div class="box box1">
-                <div class="inner">
+            <div id="BotBanner">
+                <div class="box box1">
                     <div class="veil"></div>
-                </div>
                 <div class="desc">
                     <p class="keyword">RELIABLITY</p>
-                    <h3>PERFECT SOUND FOR EVERYONE</h3>
+                    <h3>PERFECT<br/>SOUND FOR EVERYONE</h3>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
                     <button>LEARN MORE</button>
                  </div>
             </div>    
-            <div class="box box2">
-                <div class="inner">
-                    <div class="veil"></div>
-                </div>
-                <div class="desc">
-                    <p class="keyword">HIGH QUALITY</p>
-                    <h3>CHOICE OF PROFESSIONALS</h3>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
-                    <button>LEARN MORE</button>
-                </div>
-            </div>    
-            <div class="box box3">
-                 <div class="inner">
+                <div class="box box2">
+                        <div class="veil"></div>
+                    <div class="desc">
+                        <p class="keyword">HIGH QUALITY</p>
+                        <h3>CHOICE OF PROFESSIONALS</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar ante et nisl scelerisque.</p>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>    
+                <div class="box box3">
                     <div class="veil"></div> 
-                </div>
                 <div class="desc">
                     <p class="keyword">CONVENIENCE</p>
                     <h3>SATISFACTION GUARANTEED</h3>
@@ -750,7 +778,7 @@
         </div>    
             
           
-        <div id="subs">
+            <div id="subs">
             <img src="images/subscription.jpg"/> 
             <div class="content">
                 <div class="desc">
@@ -764,8 +792,7 @@
                 </div> 
             </div>
         </div>
-            
-            
+                  
     </div> 
         
                
