@@ -10,6 +10,7 @@
         <title>Kanghoyeon</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="bxslider/jquery.bxslider.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/script.js"></script>
         <script src="bxslider/jquery.bxslider.min.js"></script>
@@ -27,13 +28,23 @@
                     <li>EMAIL<span>: office@exzo.com</span></li>
                 </ul>    
                 <ul class="top_right">
-                    <li><p>LOGIN  <span>OR</span> REGISTER</p></li>
-                    <li class="currency"><img src="images/icon-usd.png"/><p>USD</p>
-                        <div class="currency_list"></div>
+                    <li><p>LOGIN</p>  <span>OR</span> <p>REGISTER</p></li>
+                    <li class="currency">
+                        <img src="images/icon-usd.png"/>
+                        <p>USD</p>
                     </li>
-                    <li><img src="images/icon-heart.png"/></li>
-                    <li><img src="images/icon-compare.png"></li>
-                    <li class="cart">MY CART<img src="images/icon-cart.png"/></li>
+                    <li class="heart"><img src="images/icon-heart.png"/></li>
+                    <li class="compare"><img src="images/icon-compare.png"></li>
+                    <li class="cart">
+                        <div class="carttext">
+                            MY CART
+                            <img src="images/icon-cart.png"/>
+                        </div>
+                        <div class="cartbox">
+                            <h2>AN EMPTY CART</h2>
+                            <p>You have no item in your shopping cart.</p>
+                        </div>
+                    </li>
                 </ul>
                 </div>
             </div>        
@@ -44,8 +55,8 @@
                         <img src="images/logo.png"/>
                     </div>
                     <ul class="menu">
-                        <li class="home menuname">
-                            <a href="#">HOME</a>
+                        <li class="menulist home">
+                            <a class="menuname" href="#">HOME</a>
                             <div class="menubox">
                                 <ul>
                                     <li><a href="#">HOME1</a></li>
@@ -54,15 +65,33 @@
                                     <li><a href="#">HOME4</a></li>
                                     <li><a href="#">HOME5</a></li>
                                     <li><a href="#">HOME6</a></li>
-                                    <li><a href="#">HOME6</a></li>
+                                    <li><a href="#">HOME7</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="product menuname">
-                            <a href="#">PRODUCT</a>
-                            <div></div>
+                        <li class="menulist product">
+                            <a class="menuname" href="#">PRODUCT</a>
+                            <div class="menubox">
+                                <ul>
+                                    <li><a href="#">ACCESSORIES</a></li>
+                                    <li><a href="#">HEADPHONES</a></li>
+                                    <li><a href="#">LAPTOPS</a></li>
+                                    <li><a href="#">SMARTPHONES</a></li>
+                                    <li><a href="#">SMARTWATCHES</a></li>
+                                    <li><a href="#">SPORT GADGETS</a></li>
+                                    <li><a href="#">GADGETS FOR HOUSE</a></li>
+                                </ul> 
+                                <div class="pic pic02">
+                                    <div class="veil"></div>
+                                </div>
+                                <div class="pic pic01">
+                                    <img src="images/menu_product01.jpg"/>
+                                    <h3>GOLD WITH NOSE BAR</h3>
+                                    <p>$449.99</p>
+                                </div>
                         </li>
-                        <li class="pages menuname"><a href="#">PAGES</a>
+                        <li class="menulist pages">
+                            <a class="menuname" href="#">PAGES</a>
                              <div class="menubox">
                                 <ul>
                                     <li><a href="#">ABOUT US</a></li>
@@ -71,8 +100,35 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menuname"><a href="#">GALLERY</a></li>
-                        <li class="menuname"><a href="#">BLOG</a></li>
+                        <li class="menulist gallery">
+                            <a class="menuname" href="#">GALLERY</a>
+                            <div class="menubox">
+                                <ul>
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#">ABOUT US</a></li>
+                                    <li><a href="#">PRODUCTS</a></li>
+                                    <li><a href="#">SERVICES</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">GALLERY</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">ACCESSORIES</a></li>
+                                    <li><a href="#">HEADPHONES</a></li>
+                                    <li><a href="#">LAPTOPS</a></li>
+                                    <li><a href="#">SMARTPHONES</a></li>
+                                    <li><a href="#">SMARTWATCHES</a></li>
+                                    <li><a href="#">SPORT GADGETS</a></li>
+                                    <li><a href="#">GADGETS FOR HOUSE</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menulist blog">
+                            <a class="menuname" href="#">BLOG</a>
+                        </li>
+                        <li class="menulist search">
+                            <i class="fa fa-search"></i>
+                        </li>
                     </ul>   
                 </div>
             </div>     
@@ -84,7 +140,7 @@
         <div class="wrapper">     
             <div id="TopSlider">
                 <div class="container">
-                    <ul class="slide">
+                    <ul class="slider">
                         <li><img src="images/TopSlider01.jpg"></li>
                         <li><img src="images/TopSlider02.jpg"></li>
                         <li><img src="images/TopSlider03.jpg"></li>
@@ -216,7 +272,7 @@
                                     <p class="price">$110.00</p>
                                 </div>
                             </li>
-                            <li class="finity">
+                            <li>
                                 <img src="images/new_all02.png"/>
                                 <div class="desc">
                                     <p class="name">FINITY PRODUCT SAMPLE</p>
@@ -225,7 +281,7 @@
                                     <p class="price">$90.00</p>
                                 </div>
                             </li>
-                            <li class="fixair">
+                            <li>
                                 <img src="images/new_all03.jpg"/>
                                  <div class="desc">
                                     <p class="name">FIXAIR PRODUCT SAMPLE</p>
@@ -234,7 +290,7 @@
                                     <p class="price">$210.00</p>
                                 </div>
                             </li>
-                            <li class="flat">
+                            <li>
                                 <img src="images/new_all04.jpg"/>
                                  <div class="desc">
                                     <p class="name">FLAT LENS SILVER AVIATOR</p>
@@ -243,7 +299,7 @@
                                     <p class="price">$449.99</p>
                                 </div>
                             </li>
-                            <li class="gold">
+                            <li>
                                 <img src="images/new_all05.jpg"/>
                                  <div class="desc">
                                     <p class="name">GOLD WITH NOSE BAR</p>
@@ -514,43 +570,79 @@
                     <p>OUR SERIES</p>
                     <h2>CHOOSING IN ONE STYLE</h2>
                 </div>
-                <div class="content">
-                    <img src="images/series_banner.jpg"/>
-                    <ul class="item">
-                        <li class="finity">
-                            <img src="images/series01.png"/>
-                            <div class="desc">
-                                <p class="name">FINITY PRODUCT SAMPLE</p>
-                                <p class="text">Description Our new HPB12/A12 battery is rated at...</p>
-                                <p class="price">$90.00</p>
-                                <button>LEARN MORE</button>
-                            </div>
+                <div class="container">
+                    <ul class="slider">
+                        <li>
+                             <img src="images/series_banner.jpg"/>
+                            <div class="item">
+                                <div class="product">
+                                    <img src="images/series01.png"/>
+                                    <div class="desc">
+                                        <p class="name">FINITY PRODUCT SAMPLE</p>
+                                        <p class="text">Description Our new HPB12/A12 battery is rated at...</p>
+                                        <p class="price">$90.00</p>
+                                        <button>LEARN MORE</button>
+                                    </div>    
+                                </div>
+                                 <div class="product">
+                                    <img src="images/series02.jpg"/>
+                                     <div class="desc">
+                                         <p class="name">DENTO PRODUCT SAMPLE</p>
+                                         <p class="text">Description Our new HPB12/A12 battery is rated at...</p>
+                                         <p class="price">$20.00</p>
+                                        <button>LEARN MORE</button>
+                                    </div>     
+                                </div> 
+                            </div>    
+                           
                         </li>
-                        
-                        <li class="dento">
-                            <img src="images/series02.jpg"/>
-                             <p class="name">DENTO PRODUCT SAMPLE</p>
-                             <p class="text">Description Our new HPB12/A12 battery is rated at...</p>
-                             <p class="price">$20.00</p>
-                            <button>LEARN MORE</button>
+                         <li>
+                             <img src="images/series_banner.jpg"/>
+                            <div class="item">
+                                <div class="product">
+                                    <img src="images/series03.jpg"/>
+                                    <div class="desc">
+                                        <p class="name">AVIATORS WITH FLAT LENS</p>
+                                        <p class="text">Description Our new HPB12/A12 battery is rated at...</p>
+                                        <p class="price">$449.99</p>
+                                        <button>LEARN MORE</button>
+                                    </div>    
+                                </div>
+                                 <div class="product">
+                                    <img src="images/series04.jpg"/>
+                                     <div class="desc">
+                                         <p class="name">BEACH CROP TOP CO-ORD</p>
+                                         <p class="text">Description Our new HPB12/A12 battery is rated at...</p>
+                                         <p class="price">$449.99</p>
+                                        <button>LEARN MORE</button>
+                                    </div>     
+                                </div> 
+                            </div>    
                         </li>
-                    </ul>
-                </div>
-            </div>
+                    </ul>   
+                 </div>
+            </div>     
             
             
             <div id="MidSlider">
                 <div class="container">
-                    <ul class="slide">
-                        <li class="card">
-                            <ul class="thumnail">
-                                <li><img src="images/Mid_thumnail01.png"/></li>
-                                <li><img src="images/Mid_thumnail02.png"/></li>
-                                <li><img src="images/Mid_thumnail03.png"/></li>
+                    <ul class="slider">
+                        <li class="card card01">
+                            <ul class="item">
+                                <li class="firstmain">
+                                    <div class="thumnail"><img src="images/Mid_thumnail01.png"/></div>
+                                    <div class="mainpic"><img src="images/Mid_mainpic01.png"/></div>
+                                </li>
+                                <li>
+                                    <div class="thumnail"><img src="images/Mid_thumnail02.png"/></div>
+                                    <div class="mainpic"><img src="images/Mid_mainpic02.png"/></div>
+                                </li>
+                                <li>
+                                    <div class="thumnail"><img src="images/Mid_thumnail03.png"/></div>
+                                    <div class="mainpic"><img src="images/Mid_mainpic03.png"/></div>
+                                </li>
                             </ul>
-                            <div class="mainpic">
-                                <img src="images/Mid_mainpic01.png"/>
-                            </div>    
+                          
                             <div class="desc">
                                 <h2>RIVER ISLAND SKINNY FIT</h2>
                                 <P>Description Our new HPB12/A12 battery is rated at 2000mAh and designed to power up
@@ -562,15 +654,21 @@
                                 <button class="cart">ADD TO CART</button>
                             </div>     
                         </li>
-                        <li class="card">
-                            <ul class="thumnail">
-                                <li><img src="images/Mid_thumnail04.png"/></li>
-                                <li><img src="images/Mid_thumnail05.png"/></li>
-                                <li><img src="images/Mid_thumnail06.png"/></li>
+                        <li class="card card02">
+                            <ul class="item">
+                                <li class="firstmain">
+                                    <div class="thumnail"><img src="images/Mid_thumnail04.png"/></div>
+                                    <div class="mainpic"><img src="images/Mid_mainpic04.png"/></div>
+                                </li>
+                                <li>
+                                    <div class="thumnail"><img src="images/Mid_thumnail05.png"/></div>
+                                    <div class="mainpic"><img src="images/Mid_mainpic05.png"/></div>
+                                </li>
+                                <li>
+                                    <div class="thumnail"><img src="images/Mid_thumnail06.png"/></div>
+                                    <div class="mainpic"><img src="images/Mid_mainpic06.png"/></div>
+                                </li>
                             </ul>
-                            <div class="mainpic">
-                                <img src="images/Mid_mainpic02.png"/>
-                            </div>
                             <div class="desc">
                                 <h2>RIVER ISLAND SKINNY FIT</h2>
                                 <P>Description Our new HPB12/A12 battery is rated at 2000mAh and designed to power up
@@ -743,9 +841,13 @@
                         </li>
                     </ul>
                     
-                    <button>VIEW ALL ACCESSORIES</button>    
+                    <div class="viewall">
+                         <button>VIEW ALL ACCESSORIES</button>
+                    </div>
+                       
+                </div>       
             </div>
-        </div>  
+       
             
             <div id="BotBanner">
                 <div class="box box1">
@@ -793,7 +895,7 @@
             </div>
         </div>
                   
-    </div> 
+        </div>
         
                
         <div id="footer">

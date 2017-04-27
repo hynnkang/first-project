@@ -10,37 +10,64 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 
 
 /*top*/
-#top {height:60px; border-bottom:1px solid gray; line-height:60px; text-align:center; position:relative;}
-#top li {border-right:1px solid lightgray;}
-#top ul {border-left:1px solid lightgray;}
+#top {height:60px; border-bottom:1px solid #ddd; line-height:60px; text-align:center; position:relative;}
+#top ul {border-left:1px solid #ddd;}
+#top li {border-right:1px solid #ddd; height:60px; font-size:11px; font-weight:bold;}
+#top li p {display:inline-block;}
+#top li span {font-size:10px; font-weight:normal;}
 #top .top_left {float:left;}
 #top .top_left li {padding:0 12px; float:left;}
 #top .top_right {float:right;}
-#top .top_right li {padding:0 12px; float:left;}
-#top li {font-size:11px; font-weight:bold;}
-#top li p {display:inline-block;}
-#top li span {font-size:10px; font-weight:normal;}
+#top .top_right li {padding:0 20px; position:relative; float:left;}
+#top .top_right li p:hover {color:#b8cc06; transition:200ms linear; cursor:pointer;}
+#top .top_right li img:hover {cursor:pointer;}
+#top .top_right li .carttext:hover {cursor:pointer;}
 #top .currency img {margin-top:25px; margin-right:5px;}
 #top .cart img {margin-top:17px; margin-left:5px;}
+#top .heart img, .compare img {height:16px; margin:22px 0;}
+#top .cart .cartbox {width:660px; height:150px; background:#fff; z-index:300; position:absolute; top:100%; text-align:center;       border-top:5px #b8cc06 solid; border-bottom-left-radius:5px; border-bottom-right-radius:5px; right:0;                           transform:translateX(52px);}
+#top .cart .cartbox h2 {font-size:18px; line-height:18px; margin-top:40px;}
+#top .cart .cartbox p {font-size:13px; color:#777; font-weight:normal;}
+
 /*navigation*/
-#nav {height:80px; border-bottom:1px solid lightgray; background:#fff;}
+#nav {height:90px; border-bottom:1px solid lightgray; background:#fff;}
 #nav .logo {float:left;}
-#nav .logo img {margin-top:11px;}
-#nav .menu {margin-top:25px; float:right;}
-#nav .menu li.home {background:#b8cc06; color:#fff;}
-#nav .menu li.home a{color:#fff;}
-#nav .menu .menuname {height:30px; line-height:30px; padding:0 15px; border-radius:15px; float:left; position:relative;}
-#nav .menu .menuname a {color:#000;}
-#nav .menu .menuname:hover {background:#b8cc06; transition:200ms linear}
-#nav .menu .menuname:hover a{color:#fff; transition:200ms linear}
+#nav .logo img {margin-top:16px;}
+#nav .menu {float:right;}
+#nav .menu .home .menuname {background:#b8cc06; color:#fff;}
+#nav .menu .menulist { float:left; position:relative; height:90px;}
+#nav .menu .search {line-height:90px; font-size:20px; margin-left:15px;}
+#nav .menu .menuname{ background:#fff; border-radius:30px; color:#000; padding:8px 18px; margin:0 5px; line-height:90px;}
+#nav .menu .menuname:hover {background:#b8cc06; color:#fff; transition:200ms linear}
 
-#nav .menu .menubox {background:#fff; position:absolute; z-index:1000; border-bottom-left-radius:5px; border-bottom-right-radius:5px; margin-top:32px;}
+#nav .menu .menubox {background:#fff; position:absolute; top:100%; z-index:200; border-bottom-left-radius:5px; 
+    border-bottom-right-radius:5px;}
+#nav .menu .menubox a {color:#888; font-size:11px; font-weight:bold;}
+#nav .menu .menubox a:hover {color:#b8cc06; transition:200ms linear;}
 
-#nav .menu .home .menubox {width:500px; height:500px;}
-#nav .menu .home .menubox ul {margin:20px;}
-#nav .menu .home .menubox ul a {color:#444; font-size:11px;}
+#nav .menu .home .menubox {width:180px; height:215px;}
+#nav .menu .home .menubox ul {margin:15px 20px;}
+#nav .menu .home .menubox ul li {margin:12px 0;}
 
-#nav .menu .pages .menubox {width:300px 100px; }
+#nav .menu .product .menubox {width:900px; height:380px; right:0; transform:translateX(230px); border-top:5px #b8cc06 solid;}
+#nav .menu .product .menubox ul {width::300px; margin:0px 30px; float:left;}
+#nav .menu .product .menubox ul li {margin:30px 0;}
+#nav .menu .product .menubox .pic {width:250px; height:300px; text-align:center; margin:25px 30px; float:right;}
+#nav .menu .product .menubox .pic01 h3 {margin:15px 0;}
+#nav .menu .product .menubox .pic01 h3:hover {color:#b8cc06; transition:all 200ms linear;}
+#nav .menu .product .menubox .pic01 p {font-size:16px;}
+#nav .menu .product .menubox .pic02 { background:url(../images/menu_product02jpg.jpg); width:250px; height:300px; 
+    border-radius:5px; background-size:cover;}
+#nav .menu .product .menubox .pic02 .veil {width:250px; height:300px; position:absolute; background:#fff; opacity:0;}
+#nav .menu .product .menubox .pic02:hover .veil {opacity:0.2; transition:all 200ms linear; cursor:pointer;}
+
+#nav .menu .pages .menubox {width:160px; height:100px; background:#fff;}
+#nav .menu .pages .menubox ul {margin:15px 20px; background:#fff;}
+#nav .menu .pages .menubox li {margin:10px 0;}
+
+#nav .menu .gallery .menubox {width:570px; height:350px; right:0; border-top:5px #b8cc06 solid;}
+#nav .menu .gallery .menubox ul {width:205px; margin:0px 40px; float:left;}
+#nav .menu .gallery .menubox ul li {margin:30px 0;}
 
 #nav.fixed {position:fixed; top:0; width:100%; z-index:100;}
 
@@ -74,7 +101,7 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #product li .desc {width:90%; margin-top:20px;}
 #product .name {font-weight:bold; margin:6px 0;}
 #product .rate {font-size:16px; color:#b8cc06; margin:5px 0;}
-#product .text {line-height:20px; font-size:13px;}
+#product .text {line-height:20px; font-size:13px; color:#777;}
 #product .price {font-size:15px; margin:12px 0;}
 #product li .cover {width:240px; height:240px; background:#fff; position:absolute; top:0; opacity:0;}
 #product li .cover button {width:130px; height:50px; margin:5px 55px; background:#b8cc06; color:#fff; border-radius:30px; }
@@ -103,29 +130,34 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 
 
 /*new*/
+#new {margin-top:200px;}
 #new .title {text-align:center;}
 #new .title h2 {font-size:40px;}
-#new .category {width:1160px; height:320px; margin-top:70px; position:relative;}
-#new .category h3 {height:30px; line-height:30px; padding:0 20px; border-radius:15px; border:1px #ddd solid;
-            float:left; margin:0 15px; cursor:pointer;}
+#new .category {width:1160px; height:400px; margin-top:100px; position:relative;}
+#new .category h3 {height:30px; line-height:30px; font-size:12px; color:#777; padding:0 20px; 
+    border-radius:15px; border:1px #ddd solid; float:left; margin:0 15px; cursor:pointer;}
+#new .category h3:hover {background:#b8cc06; color:#fff; transition:200ms linear;}
 #new .category .all h3 {margin-left:240px;}
 #new .category .item {display:none;}
 #new .category .all .item {display:block;}
 #new .item {height:320px; margin-top:60px; position:absolute;}
 #new .item li {float:left; width:212px; height:320px; text-align:center; margin:0 10px;}
 #new .item img {width:80%;}
-#new .item .name {font-weight:bold; margin:5px 0;}
-#new .item .rate {color:#b8cc06; margin:5px 0;}
-#new .item .price {font-size:15px; margin:10px 0;}
+#new .item .name {font-weight:bold; margin:20px 0 10px;}
+#new .item .rate {font-size:16px; color:#b8cc06; margin:10px 0;}
+#new .item .text {color:#777; margin:10px 0;}
+#new .item .price {font-size:15px; margin:20px 0 10px;}
 .active {background:#b8cc06; color:#fff;}
 
 /*series*/
-#series {margin-top:90px;}
+#series {margin-top:150px;}
 #series .title {text-align:center;}
 #series .title h2 {font-size:40px;}
-#series .content {margin-top:70px;}
+#series .container {height:510px; width:1160px; margin-top:100px;}
+#series .slider img {float:left;}
 #series .item {float:right;}
-#series .item li {float:left; text-align:center; width:265px; margin:0 10px;}
+#series .item .product {float:left; text-align:center; width:250px; margin:0 10px;}
+#series .item .product img {width:250px;}
 #series .item .name {font-size:18px; font-weight:bold;}
 #series .item .text {font-size:12px; margin:5px 0;}
 #series .item .price {font-size:15px; margin:15px 0;}
@@ -134,49 +166,52 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 
 
 /*Middle Slider*/
-#MidSlider {margin:70px 0;}
+#MidSlider {margin-top:200px;}
 #MidSlider .container {width:1160px; overflow:hidden;}
-#MidSlider .slide {width:2320px;}
-#MidSlider .slide .card {width:1160px; height:545px; background:url(../images/MidSliderbg01.jpg); background-size:cover;                       float:left; position:relative;}
-#MidSlider .slide .thumnail {width:70px; height:210px; transform:translateY(50%); margin-left:20px;}
-#MidSlider .slide .thumnail li {width:70px; height:70px; border-radius:50%; border:1px #fff solid;}
-#MidSlider .slide .card .mainpic {margin-top:auto; position:absolute; top:40px; left:80px;}
-#MidSlider .slide .card .desc {margin-top:80px; position:absolute; right:0; color:#fff; width:570px; top:30px;}
-#MidSlider .slide .card .desc h2 {font-size:40px; margin:30px 0;}
-#MidSlider .slide .card .desc p {font-size:16px; margin:20px 0;}
-#MidSlider .slide .card .desc p.price {font-size:18px; margin-top:50px;}
+#MidSlider .slider {width:2320px;}
+#MidSlider .slider .card {width:1160px; height:550px; background:url(../images/MidSliderbg01.jpg); background-size:cover;                       float:left; position:relative;}
+#MidSlider .item .thumnail {width:70px; height:70px; border-radius:50%; border:1px #fff solid; margin:10px 0;
+        margin-left:20px;}
+#MidSlider .item .firstmain .thumnail {margin-top:140px;}
+#MidSlider .item .thumnail.clickact {background:#fff;}
+#MidSlider .item .mainpic {width:450px; position:absolute; top:40px; left:100px; display:none;}
+#MidSlider .slider .card .desc {margin-top:80px; position:absolute; right:0; color:#fff; width:570px; top:30px;}
+#MidSlider .slider .card .desc h2 {font-size:40px; margin:30px 0;}
+#MidSlider .slider .card .desc p {font-size:16px; margin:20px 0;}
+#MidSlider .slider .card .desc p.price {font-size:18px; margin-top:50px;}
 #MidSlider .card .button {position:absolute; right:60px; top:320px;}
 #MidSlider .card .button button {background:#fff; color:#000; width:140px; height:50px; margin:0 5px;}
 #MidSlider .card .button button.cart {background:#333; color:#fff;}
 #MidSlider .card .button button:hover {background:#b8cc06; color:#fff; transition:200ms linear;}
 
 /*accessories*/
+#acce {margin-top:120px;}
 #acce .title {text-align:center;}
 #acce .title h2 {font-size:40px;}
-#acce .item {text-align:center;}
+#acce .item {text-align:center; margin-top:50px;}
 #acce .item ul {width:1160px; margin:0 auto; float:left;}
 #acce .item li {width:150px; margin:20px; float:left; text-align:center; position:relative;}
 #acce .item li .cover {width:150px; height:125px; background:#fff; position:absolute; top:0; opacity:0;}
-#acce .item li .cover button {width:110px; height:30px; margin:5px auto; background:#b8cc06; color:#fff; border-radius:30px; }
+#acce .item li .cover button {width:110px; height:30px; margin:5px auto; background:#b8cc06; color:#fff;}
 #acce .item li .cover button.quickview {background:#333;}
 #acce .item li .cover .button {margin-top:60px;}
 #acce .item li:hover .cover {opacity:1; transition:200ms ease;}
 #acce .item li:hover .button {margin-top:20px; transition:300ms ease;}
 #acce .item p {font-size:11px; margin:10px 0;}
 #acce .item .name {font-weight:bold;}
-
+#acce .viewall button {padding:20px 28px; background:#b8cc06; color:#fff; }
+#acce .viewall button:hover {background:#94bf1d; transition:200ms linear; }
 
 /*Bottom Banners*/
-#BotBanner {width:1160px; height:550px; margin:60px 25px 0; overflow:hidden;}
-#BotBanner .box {width:350px; height:430px; float:left; margin:0 10px; position:relative; border-radius:5px;
-    background-size:cover;}
+#BotBanner {width:1160px; height:550px; margin:60px 25px 0; overflow:hidden; margin-top:150px;}
+#BotBanner .box {width:340px; height:430px; float:left; margin:0 15px; position:relative; border-radius:5px;}
 #BotBanner .box .desc {width:250px; margin:0px auto; top:35px; left:50px; position:absolute; color:#fff;} 
 #BotBanner .box h3 {font-size:30px; margin-top:10px; line-height:30px;}
 #BotBanner .box .desc p {font-size:16px; margin-top:30px;}
 #BotBanner .box .desc .keyword {font-size:14px; font-weight:bold;}
-#BotBanner .box1 {background:url(../images/BotBanner01.jpg);}
-#BotBanner .box2 {background:url(../images/BotBanner02.jpg);}
-#BotBanner .box3 {background:url(../images/BotBanner03.jpg);}
+#BotBanner .box1 {background:url(../images/BotBanner01.jpg); background-size:cover;}
+#BotBanner .box2 {background:url(../images/BotBanner02.jpg); background-size:cover;}
+#BotBanner .box3 {background:url(../images/BotBanner03.jpg); background-size:cover;}
 #BotBanner .desc {text-align:center}
 #BotBanner button {background:#333; color:#fff; border-radius:30px; width:130px; height:50px; margin:30px 0;}
 #BotBanner button:hover {background:#b8cc06; transition:200ms linear;}
