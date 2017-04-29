@@ -23,11 +23,13 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #top .top_right li img:hover {cursor:pointer;}
 #top .top_right li .carttext:hover {cursor:pointer;}
 #top .currency img {margin-top:25px; margin-right:5px;}
-#top .cart img {margin-top:17px; margin-left:5px;}
 #top .heart img, .compare img {height:16px; margin:22px 0;}
+#top .cart img {margin:17px 5px 0 2px;}
+#top .cart span {color:#b8cc06; font-size:13px;}
 #top .cart .cartbox {width:660px; height:150px; background:#fff; z-index:300; position:absolute; top:100%; text-align:center;       border-top:5px #b8cc06 solid; border-bottom-left-radius:5px; border-bottom-right-radius:5px; right:0;                           transform:translateX(52px);}
 #top .cart .cartbox h2 {font-size:18px; line-height:18px; margin-top:40px;}
 #top .cart .cartbox p {font-size:13px; color:#777; font-weight:normal;}
+
 
 /*navigation*/
 #nav {height:90px; border-bottom:1px solid lightgray; background:#fff;}
@@ -80,19 +82,19 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 
 
 /*collection*/
-#collection {height:340px;}
-#collection .relax, .street {float:left; width:580px; height:340px; color:#fff; position:relative; overflow:hidden; }
-#collection .relax {background:url(../images/collection01.jpg); background-size:cover;}
-#collection .street {background:url(../images/collection02.jpg); background-size:cover;}
-#collection .desc {width:400px; height:220px; margin:0 auto; position:absolute; top:60px; left:80px;}
-#collection h2 {margin:20px 0; font-size:30px;}
-#collection .text {font-size:16px;}
-#collection button {background:#fff; width:140px; height:50px; color:#000; text-align:center; line-height:50px; position:absolute; left:80px; bottom:60px;}
-#collection button:hover {background:#b8cc06; color:#fff; transition:200ms linear;}
-#collection .veil {width:580px; height:640px; background:#b8cc06; opacity:0.2; position:absolute; top:-850px;
+#TopBanner {height:340px;}
+#TopBanner .relax, .street {float:left; width:580px; height:340px; color:#fff; position:relative; overflow:hidden; }
+#TopBanner .relax {background:url(../images/collection01.jpg); background-size:cover;}
+#TopBanner .street {background:url(../images/collection02.jpg); background-size:cover;}
+#TopBanner .desc {width:400px; height:220px; margin:0 auto; position:absolute; top:60px; left:80px;}
+#TopBanner h2 {margin:20px 0; font-size:30px;}
+#TopBanner .text {font-size:16px;}
+#TopBanner button {background:#fff; width:140px; height:50px; color:#000; text-align:center; line-height:50px; position:absolute; left:80px; bottom:60px;}
+#TopBanner button:hover {background:#b8cc06; color:#fff; transition:200ms linear;}
+#TopBanner .veil {width:580px; height:640px; background:#b8cc06; opacity:0.2; position:absolute; top:-850px;
             transition:500ms linear}
-#collection .relax:hover .veil {display:block; top:0;}
-#collection .street:hover .veil {display:block; top:0;}
+#TopBanner .relax:hover .veil {display:block; top:0;}
+#TopBanner .street:hover .veil {display:block; top:0;}
 
 /*product*/
 #product {height:480px; border-bottom:1px #ddd solid; margin-top:30px;}
@@ -133,14 +135,14 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #new {margin-top:200px;}
 #new .title {text-align:center;}
 #new .title h2 {font-size:40px;}
-#new .category {width:1160px; height:400px; margin-top:100px; position:relative;}
-#new .category h3 {height:30px; line-height:30px; font-size:12px; color:#777; padding:0 20px; 
-    border-radius:15px; border:1px #ddd solid; float:left; margin:0 15px; cursor:pointer;}
+#new .category {width:1160px; height:460px; margin-top:100px; position:relative;}
+#new .category h3 {height:30px; line-height:30px; font-size:12px; padding:0 20px; 
+    border-radius:15px; float:left; margin:0 20px; cursor:pointer;}
 #new .category h3:hover {background:#b8cc06; color:#fff; transition:200ms linear;}
 #new .category .all h3 {margin-left:240px;}
 #new .category .item {display:none;}
 #new .category .all .item {display:block;}
-#new .item {height:320px; margin-top:60px; position:absolute;}
+#new .item {height:340px; margin-top:120px; position:absolute;}
 #new .item li {float:left; width:212px; height:320px; text-align:center; margin:0 10px;}
 #new .item img {width:80%;}
 #new .item .name {font-weight:bold; margin:20px 0 10px;}
@@ -150,7 +152,7 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 .active {background:#b8cc06; color:#fff;}
 
 /*series*/
-#series {margin-top:150px;}
+#series {margin-top:180px;}
 #series .title {text-align:center;}
 #series .title h2 {font-size:40px;}
 #series .container {height:510px; width:1160px; margin-top:100px;}
@@ -193,14 +195,16 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #acce .item li {width:150px; margin:20px; float:left; text-align:center; position:relative;}
 #acce .item li .cover {width:150px; height:125px; background:#fff; position:absolute; top:0; opacity:0;}
 #acce .item li .cover button {width:110px; height:30px; margin:5px auto; background:#b8cc06; color:#fff;}
+#acce .item li .cover button:hover {background:#94bf1d; transition:all 200ms linear;}
 #acce .item li .cover button.quickview {background:#333;}
-#acce .item li .cover .button {margin-top:60px;}
+#acce .item li .cover button.quickview:hover {background:#b8cc06;}
+#acce .item li .cover .button {margin-top:35px;}
 #acce .item li:hover .cover {opacity:1; transition:200ms ease;}
 #acce .item li:hover .button {margin-top:20px; transition:300ms ease;}
 #acce .item p {font-size:11px; margin:10px 0;}
 #acce .item .name {font-weight:bold;}
 #acce .viewall button {padding:20px 28px; background:#b8cc06; color:#fff; }
-#acce .viewall button:hover {background:#94bf1d; transition:200ms linear; }
+#acce .viewall button:hover {background:#94bf1d; transition:300ms linear; }
 
 /*Bottom Banners*/
 #BotBanner {width:1160px; height:550px; margin:60px 25px 0; overflow:hidden; margin-top:150px;}
@@ -245,8 +249,8 @@ button {font-weight:bold; font-size:11px; border:none; cursor:pointer; border-ra
 #footer .links li:hover a {color:#b8cc06; transition:200ms linear;}
 
 #footer .posts li {width:260px; height:80px;}
-#footer .posts li img {width:70px; height:30px;}
-#footer .posts .desc {float:right; width:180px;}
+#footer .posts li img {width:70px; height:34px; border-radius:5px;}
+#footer .posts .desc {float:right; width:180px; margin-top:3px;}
 #footer .posts .date {color:#919191;}
 #footer .posts li p.text:hover {color:#b8cc06; transition:200ms linear;}
 #footer .tags li {background:#404040; padding:10px 10px; float:left; border-radius:30px; margin:5px 5px;}

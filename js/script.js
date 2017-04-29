@@ -4,9 +4,11 @@ $(document).ready(function(){
     $('#top .cart .carttext').on('mouseenter',function(){
        $(this).siblings('.cartbox').show(); 
     });
+    
      $('#top .cart .carttext').on('mouseleave',function(){
         $(this).siblings('.cartbox').hide(); 
     });
+    
 
     $('#nav .menulist .menubox').hide();
     $('#nav .menulist .menuname').on('mouseenter',function(){
@@ -51,6 +53,7 @@ $(document).ready(function(){
     
     $('#MidSlider .firstmain .mainpic').css('display','block');
     $('#MidSlider .firstmain .thumnail').addClass('clickact');
+    
     $('#MidSlider .card01 .thumnail').on('click',function(){
         $('#MidSlider .card01 .thumnail').removeClass('clickact')
         $(this).addClass('clickact')
